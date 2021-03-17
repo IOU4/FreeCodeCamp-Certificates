@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">
+      <img src="/logo.png" alt="Logo" id="header-img">
+    </div>
+    <div id="title-div">
+      <p>Coffee shop</p>
+    </div>
+    <nav id="nav-bar">
+      <a href="#discover" class="nav-link">
+        <div>Discover us</div>
+      </a>
+      <a href="#locations" class="nav-link">
+        <div>Our stores!</div>
+      </a>
+      <a href="#coffees" class="nav-link">
+        <div>Our Coffees</div>
+      </a>
+      <a href="#order" class="nav-link">
+        <div>Order Now!!</div>
+      </a>
+    </nav>
+  </header>
+  <main id="main">
+    <div id="discover" class="card discover">
+      <h3 class="h3-title">Here is a video showing more about our shop :</h3>
+      <iframe id="video" src="https://www.youtube.com/embed/LkBOAvzWNfM"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen class="frame"></iframe>
+    </div>
+    <div id="locations" class="stores card">
+      <h3 class="h3-title"> places where you can find us :</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26968.065793252998!2d-6.348031650943758!3d32.33848878045626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scoffee%20shop!5e0!3m2!1sen!2sma!4v1615470864055!5m2!1sen!2sma" allowfullscreen="" loading="lazy" class="frame"></iframe>
+    </div>
+    <div id="coffees" class="card types-div">
+      <h3 class="h3-title">Here is some of our types :</h3>
+    </div>
+    <div id="order" class="card order">
+      <h3 class="h3-titile">Want to order one ? :</h3>
+      <form action="#" method="post" class="form" id="form">
+        <label class="label" for="name">Name: </label>
+        <input type="text" name="name" id="name" class="input" placeholder="enter your name">
+        <label class="label" for="email">Email: </label>
+        <input type="email" name="email" id="email" class="input" placeholder="enter your email">
+        <label class="label" for="the-order">Wich one you choosed : </label>
+        <input type="text" name="the-order" id="the-order" class="input" placeholder="enter your choice">
+        <input type="submit" value="submit" class="input" id="submit">
+      </form>
+    </div>
+  </main>
+  <footer id="footer" style="text-align: center; margin-top: 1em;">
+    @Imad-uo made for FCC
+  </footer>
+  <script src="/in.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

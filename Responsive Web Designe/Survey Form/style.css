@@ -1,0 +1,110 @@
+#body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80");
+    background-size: cover;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    max-height: fit-content;
+  }
+  
+  #main,
+  #header,
+  #footer {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+  }
+  
+  #header {
+    height: 140px;
+    border-bottom: 0;
+  }
+  #main {
+    backdrop-filter: blur(30px);
+    border: 1px solid grey;
+    border-radius: 20px;
+  }
+  #footer {
+    height: 60px;
+    justify-content: center;
+  }
+  .title {
+    height: min-content;
+    border: 2px solid red;
+  }
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 2%;
+  }
+  
+  .sub-form {
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+    position: relative;
+  }
+  
+  legend {
+    width: max-content;
+    height: 30%;
+  }
+  .field {
+    width: 80%;
+    height: 40%;
+    background-color: rgba(154, 205, 255, 0.212);
+    color: grey;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+  }
+  .comment-section {
+    height: min-content;
+  }
+  .vertical {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  fieldset label {
+    font-weight: normal;
+    letter-spacing: 0.1px;
+  }
+  .custom-height {
+    height: fit-content;
+    max-height: 10%;
+    padding-bottom: 6%;
+  }
+  
+  .slider {
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .value {
+    width: auto;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  @media (max-width: 700px) {
+    #main,
+    #header,
+    #footer {
+      width: 96vw;
+    }
+    #header {
+      height: 80px;
+      overflow: hidden;
+    }
+  }
+  

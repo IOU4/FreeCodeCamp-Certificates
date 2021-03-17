@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+
+    <body id="body">
+        <header id="header">
+            <h1 id="title">Website Survey,</h1>
+            <p id="description">
+                <small><em>please take you're time to fullfil this Survey...</em></small>
+            </p>
+        </header>
+        <main id="main">
+            <form action="" id="survey-form">
+                <div class="sub-form">
+                    <label class="border-bottom" for="name" id="name-label">What's your Name ?
+                    </label>
+                    <input class="field" id="name" type="text" placeholder="enter your name.." required />
+                </div>
+                <div class="sub-form age">
+                    <label class="border-bottom" for="age" id="number-label">How old are you ?</label>
+                    <input class="field" type="number" id="number" placeholder="your age (between 18 & 45)" name="age"
+                        max="45" min="18" />
+                </div>
+                <div class="sub-form">
+                    <label class="border-bottom" for="email" id="email-label">How we can contact you ?</label>
+                    <input class="field" type="email" id="email" placeholder="enter your email.." name="email"
+                        required />
+                </div>
+                <div class="sub-form">
+                    <label class="border-bottom" for="gender" id="gender-label">What is your gender ?</label>
+                    <select class="field" name="gender" id="dropdown">
+                        <option disabled selected value="disabled">choose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="sub-form custom-height">
+                    <fieldset class="vertical">
+                        <legend class="border-bottom">What is your native language ?
+                        </legend>
+                        <label>
+                            <input type="radio" name="languages" value="english" />
+                            English
+                        </label>
+                        <label>
+                            <input type="radio" name="languages" value="russian" />
+                            Russian
+                        </label>
+                        <label>
+                            <input type="radio" name="languages" value="french" />
+                            French
+                        </label>
+                        <label>
+                            <input type="radio" name="languages" value="arabic" />
+                            Arabic
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="sub-form custom-height">
+                    <fieldset class="vertical">
+                        <legend class="border-bottom">Wich p-languages you can use ?</legend>
+                        <label>
+                            <input type="checkbox" value="C" name="" />
+                            C
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Cpp" name="Cpp" />
+                            Cpp
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Fortran" name="Fortran" />
+                            Fortran
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Perl" name="Perl" />
+                            Perl
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Assembly" name="Assembely" />
+                            Assembly
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="sub-form">
+                    <label class="border-bottom">How satisfied our website was ?</label>
+                    <input id="slider" class="field slider" type="range" min="0" max="100" value="70" step="10" />
+                    <p class="value"><span id="demo">20</span>%</p>
+                </div>
+                <div class="sub-form custom-height">
+                    <label class="border-bottom" for="feedbak">Do you have additional comments
+                        ?</label>
+                    <textarea class="field comment-section" name="feedback" id="feedback" rows="10"
+                        placeholder="feedback, recommendation  ...."></textarea>
+                </div>
+                <div class="sub-form">
+                    <label for="submit">Submit all information ?</label>
+                    <input class="field submit" id="submit" type="submit" value="submit">
+                </div>
+            </form>
+        </main>
+        <footer id="footer">
+            <div> <small>All rights reserved for FCC</small></div>
+        </footer>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

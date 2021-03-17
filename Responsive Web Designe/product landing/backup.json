@@ -1,0 +1,28 @@
+{
+    "coffees": [
+        {
+            "name" : "Cappuccino",
+            "imgUrl" : "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-CAPPUCCINO-BANANA-SESAME-SEEDS.jpg",
+            "description": "Cappuccino is a latte made with more foam than steamed milk, often with a sprinkle of cocoa powder or cinnamon on top. Sometimes you can find variations that use cream instead of milk or ones that throw in flavor shot, as well.",
+            "price": "1.50$"
+        },
+        {
+            "name" : "Black-coffee",
+            "imgUrl" : "https://resize.indiatvnews.com/en/resize/newbucket/715_-/2019/06/blackcoffee-1561170296.jpg",
+            "description": "just blakc coffe DO NOT by it what so ever !!!",
+            "price": "1.99$"
+        },
+        {
+            "name" : "Americano",
+            "imgUrl" : "https://images.squarespace-cdn.com/content/v1/5a7cbe247131a5f17b3cc8fc/1519447742018-MOHBW2G0VOQ7QSCPJE14/ke17ZwdGBToddI8pDm48kHsMJ9SuTvzPQGYWvz_s8VxZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVERtp2XdMl9TkoWep3sex-0XtFGJVOG-7fEoyhF7MYNN-4sk1tdgEkQsVzLuuaVaBo/Americano-Coffee-Lounge-Ingredients.jpg?format=500w",
+            "description": "With a similar flavor to black coffee, the americano consists of an espresso shot diluted in hot water. Pro tip: if you’re making your own, pour the espresso first, then add the hot water.",
+            "price": "2.19$"
+        },
+        {
+            "name" : "Espresso",
+            "imgUrl" : "https://www.nespresso.com/ncp/res/uploads//recipes/nespresso-recipes-Espresso-Macchiato-by-Nespresso.jpg",
+            "description": "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
+            "price": "1.19$"
+        }
+    ]
+}

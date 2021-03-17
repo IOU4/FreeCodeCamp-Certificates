@@ -1,0 +1,203 @@
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img2.goodfon.com/wallpaper/nbig/0/d4/colors-hd-backgrounds.jpg');
+    /* background: linear-gradient(90deg, #ffcccc, #490000);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover; 
+    color: white;
+  }
+  #header {
+    width: 90%;
+    min-height: 10%;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 10px;
+    border-bottom: white solid 2px;
+  }
+  #main {
+    margin-top: 2%;
+    width: 90%;
+    height: 230vh;
+  }
+  #navbar {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 40;
+  }
+  .nav-link {
+    text-decoration: none;
+    padding: 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: bisque solid 2px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .anim {
+    background-color: whitesmoke;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1;
+    left: -1;
+    transform: scale(0, 0);
+    transform-origin: top left;
+    transition: transform 0.3s;
+    border-radius: 6px;
+  }
+  .anim-text {
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-link:hover .anim {
+    transform: scale(1, 1);
+    transform-origin: bottom right;
+  }
+  .nav-link:hover .anim-text {
+    color: rgb(40, 0, 0);
+  }
+  .title {
+    transform: skew(10deg);
+    transition: transform 0.2s;
+    letter-spacing: 5px;
+  }
+  .title::after {
+    content: "😎";
+  }
+  .title:hover {
+    transform: skew(0deg);
+  }
+  .title:hover:after {
+    content: "🤓";
+  }
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom: white solid 2px;
+  }
+  .center-welcome {
+    position: relative;
+    height: 60%;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 20px 0.5px black;
+  }
+  p {
+    font-weight: 600;
+  }
+  .imad {
+    font-size: 600%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #discover {
+    position: relative;
+    top: 15%;
+  }
+  #projects {
+    position: relative;
+    height: 44%;
+    display: grid;
+    grid-template-areas:
+      "project project"
+      "project project";
+    place-items: center;
+    gap: 3%;
+    padding: 5% 2% 2% 2%;
+    border-radius: 10px;
+    border-bottom: white solid 2px;
+  }
+  .center-proj {
+    height: 95%;
+    width: 90%;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: x-large;
+    transition: font-size 0.2s;
+  }
+  #contact {
+    height: 5%;
+    border-radius: 10px;
+    border-bottom: white solid 2px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+  }
+  .tit {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-radius: 10px;
+    border-bottom: white solid 2px;
+  }
+  .project-tile {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+  }
+  .center-proj:hover {
+    font-size: xx-large;
+  }
+  @media (max-width: 800px) {
+    #projects {
+      grid-template-areas:
+        "project"
+        "project"
+        "project"
+        "project";
+    }
+    .tit {
+      display: none;
+    }
+    #discover {
+      display: none;
+    }
+    #header {
+      min-height : 10vh;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content : enter;
+    }
+    #welcome-section { 
+      height: 100vh;
+    }
+    .title {
+      display: none;
+    }
+  }
